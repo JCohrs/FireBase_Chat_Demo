@@ -7,10 +7,19 @@ package com.example.jeffs.firebase_chat_demo.model;
 public class ChatMessage {
     private String msg;
     private String username;
+    private String msgTime;
+
+    public ChatMessage(){}
 
     public ChatMessage(String msg, String username) {
         this.msg = msg;
         this.username = username;
+    }
+
+    public ChatMessage(String msg, String username, String msgTime) {
+        this.msg = msg;
+        this.username = username;
+        this.msgTime = msgTime;
     }
 
     public String getMsg() {
@@ -27,6 +36,10 @@ public class ChatMessage {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getMsgTime() {
+        return msgTime;
     }
 
     // private String videoURL;
